@@ -1,0 +1,1402 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+button.normal
+{
+    padding: 15px 30px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    transition: 0.2s;
+}
+button.white
+{
+    padding: 11px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    outline: none;
+    border: 1px solid white;
+    transition: 0.2s;
+}
+
+
+body
+{
+    width: 100%;
+}
+
+/*................... header section................... */
+
+.header
+{
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: white;
+    /* box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06); */
+}
+.nav-bar
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-bar li
+{
+    padding: 0 20px;
+    list-style-type: none;
+    position: relative;
+}
+.nav-bar li a
+{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    color: black;
+    transition: 0.3s ease;
+}
+.nav-bar li a:hover,.nav-bar li a.active 
+{
+    color:red;
+}
+.nav-bar li a.active::after, .nav-bar li a:hover::after
+{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color:red;
+    position: absolute;
+    left: 20px;
+    bottom: -1px;
+}
+.mobile
+{
+   display: none;
+   align-items: center;
+}
+.close
+{
+    visibility: hidden;
+    width: 0;
+}
+
+
+
+/*................... Home section................... */
+
+.hero
+{
+    width: 100%;
+    height: 90vh;
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.hero .hero-text
+{
+    height: 100%;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero .hero-text h4,h2
+{
+    color:black;
+}
+.hero .hero-text h4
+{
+    font-size: 30px;
+}
+.hero .hero-text h2
+{
+    font-size: 55px;
+    color: black;
+}
+.hero .hero-text h1
+{
+    font-size: 55px;
+    color: red;
+}
+.hero .hero-text p
+{
+    padding-bottom: 20px;
+    font-size: 18px;
+    color:gray;
+}
+.hero .hero-text button
+{
+    padding: 10px 15px;
+    border-radius: 10px;
+    color:white;
+    background-color: red;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    border-color: white;
+}
+.hero .hero-text button:hover
+{
+    background-color: rgb(188, 5, 5);
+}
+.hero .hero-image
+{
+    flex-basis: 50%;
+}
+.hero .hero-image img
+{
+    object-fit: cover;
+}
+
+
+
+
+/*................... Feature section................... */
+
+.feature
+{
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.feature .fe-box
+{
+    width: 180px;
+    margin: 15px 0;
+    padding: 25px 10px;
+    text-align: center;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 5px;
+}
+.feature .fe-box:hover
+{
+    background-color: rgb(240, 240, 240);
+}
+.feature .fe-box img
+{
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+.feature .fe-box h3
+{
+    font-size: 13px;
+}
+
+
+/*................... Product section................... */
+
+.product1
+{
+    padding: 40px 80px;
+    text-align: center;
+}
+.product1 .pro-container
+{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product1 h2
+{
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    background-color: rgb(241, 241, 241);
+}
+.product1 .pro
+{
+    width: 23%;
+    min-width: 250px;
+    margin: 15px 0;
+    padding: 10px 12px;
+    position: relative;
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+.product1 .pro:hover
+{
+    transform: translateY(-10px);
+}
+.product1 img
+{
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 20px;
+}
+.product1 .pro .dec
+{
+    padding: 10px 0;
+    text-align: start;
+}
+.product1 .pro .dec span
+{
+    font-size: 15px;
+    color: gray;
+}
+.product1 .pro .dec h5
+{
+    padding-top: 7px;
+    font-size: 14px;
+}
+.product1 .pro .dec i
+{
+    font-size: 14px;
+    color: rgb(243, 181, 25);
+}
+.product1 .pro .dec h4
+{
+    padding-top: 7px;
+    font-size: 20px;
+    color: rgb(22, 163, 12);
+}
+.product1 .pro .cart-add
+{
+    width: 40px;
+    height: 40px;
+    /* line-height: 40px; */
+    color: black;
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+}
+
+
+/*................... Banner1 section................... */
+
+
+.banner
+{
+    width: 100%;
+    height: 40vh;
+    margin: 40px 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/bn1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*................... Banner2 section................... */
+
+
+.smBanner
+{
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.smBanner .bannerBox
+{
+    padding: 30px;
+    min-width: 600px;
+    height: 50vh;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(img/b17.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.smBanner h4
+{
+    font-size: 30px;
+    font-weight: 300;
+    color: white;
+}
+.smBanner h2
+{
+    font-size: 50px;
+    font-weight: 800;
+    color: white;
+}
+.smBanner p
+{
+    padding-bottom: 15px;
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+.smBanner .bannerBox button:hover
+{
+    background-color: red;
+}
+.smBanner .bannerBox:nth-child(2 of .bannerBox)
+{
+    background-image: url(img/b10.jpg);
+}
+
+
+/*................... Banner3 section................... */
+
+.banner3
+{
+    padding: 0 80px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.banner3 .bannerBox
+{
+    margin-bottom: 20px;
+    padding: 20px;
+    min-width: 30%;
+    height: 30vh;
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image: url(img/b7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.banner3 h2
+{
+    font-size: 22px;
+    font-weight: 900;
+    color: white;
+}
+.banner3 h3
+{
+    font-size: 15px;
+    font-weight: 800;
+    color: red;
+}
+.banner3 .bannerBox:nth-child(2 of .bannerBox)
+{
+    background-image: url(img/b4.jpg);
+}
+.banner3 .bannerBox:nth-child(3 of .bannerBox)
+{
+    background-image: url(img/b18.jpg);
+}
+
+/*................... Newsletter section................... */
+
+.newsletter
+{
+    margin: 40px 0;
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-image: url(img/b14.png);
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+}
+.newsletter .form
+{
+    width: 30%;
+    display: flex;
+}
+.newsletter h4
+{
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+}
+.newsletter p
+{
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(161, 161, 161);
+}
+.newsletter p span
+{
+    color: gold;
+}
+.newsletter input
+{
+    width: 100%;
+    height: 3.125rem;
+    padding: 0 1.25em;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.newsletter button
+{
+    background-color: red;
+    color: white;
+    white-space: nowrap;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+/*................... Footer section................... */
+
+footer
+{
+    padding: 40px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .col
+{
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+footer .logo
+{
+    margin-bottom: 30px;
+}
+footer h4
+{
+    padding-bottom: 20px;
+    font-size: 17px;
+}
+footer p
+{
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: black;
+}
+footer a
+{
+    margin-bottom: 8px;
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+}
+footer .follow
+{
+    margin-top: 20px;
+}
+footer .icons i
+{
+    font-size: 20px;
+    padding-right: 4px;
+    cursor: pointer;
+    color: #4f4f4f;
+}
+footer .icons i:nth-child(1):hover
+{
+   color: #d62976;
+}
+footer .icons i:nth-child(2):hover
+{
+   color: #0674fb;
+}
+footer .icons i:nth-child(3):hover
+{
+   color: black;
+}
+footer .icons i:nth-child(4):hover
+{
+   color: rgb(255, 6, 6);
+}
+footer .install .row img
+{
+    border: 1px solid red;
+    border-radius: 6px;
+}
+footer .install img
+{
+    margin: 10px 0 15px 0;
+}
+footer a:hover
+{
+    color: red;
+}
+footer .copyright
+{
+    width: 100%;
+    text-align: center;
+}
+
+
+/*................... Shop Page-header section................... */
+
+.page-header
+{
+    width: 100%;
+    height: 40vh;
+    padding: 14px;
+    background-image: url(img/bn6.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*................... Shop Pagination section................... */
+
+.pagination
+{
+    padding: 40px 80px;
+    text-align: center;
+}
+.pagination a
+{
+    padding: 15px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+
+/*................... Shop Prodetails section................... */
+
+.prodetails
+{
+    margin-top: 20px;
+    padding: 40px 80px;
+    display: flex;
+
+}
+.mainImage
+{
+    width: 100%;
+}
+.prodetails .single-proImage
+{
+    width: 40%;
+    margin-right: 50px;
+}
+.small-img-group
+{
+    display: flex;
+    justify-content: space-between;
+}
+.smallImg-col
+{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+.small-imgs
+{
+    width: 100%;
+}
+.prodetails .single-pro-details
+{
+    width: 50%;
+    padding-top: 30px;
+}
+.prodetails .single-pro-details h6
+{
+    font-size: 15px;
+}
+.prodetails .single-pro-details h4
+{
+    padding: 40px 0 20px 0;
+    font-size: 26px;
+}
+.prodetails .single-pro-details h2
+{
+    color: red;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+.prodetails .single-pro-details select
+{
+    margin: 10px 0;
+    padding: 5px 10px;
+    display: block;
+}
+.prodetails .single-pro-details input
+{
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    outline: none;
+}
+.prodetails .single-pro-details button
+{
+    color: white;
+    background-color: red;
+}
+.prodetails .single-pro-details span
+{
+    line-height: 25px;
+}
+
+
+
+/*................... About section................... */
+
+.about-header
+{
+    background-image: url(img/bn3.jpg);
+}
+.about-head
+{
+    padding: 40px 80px;
+    display: flex;
+    align-items: center;
+}
+.about-head img
+{
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+}
+.about-box 
+{
+    padding-left: 40px;
+}
+.about-box h2,p
+{
+    color: black;
+}
+.about-box h2
+{
+    font-size: 40px;
+}
+.about-box marquee
+{
+    width: 100%;
+    background-color: rgb(188, 187, 187);
+}
+.about-app
+{
+    padding: 40px 80px;
+}
+.about-app h1
+{
+    font-size: 45px;
+    text-align: center;
+}
+.about-app .video
+{
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+.about-app .video video
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.feature
+{
+    padding: 40px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.feature .fe-box1
+{
+    width: 180px;
+    margin: 15px 0;
+    padding: 25px 10px;
+    text-align: center;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border: 1px solid rgb(218, 218, 218);
+    border-radius: 5px;
+}
+.feature .fe-box1:hover
+{
+    background-color: rgb(217, 235, 252);
+}
+.feature .fe-box1:nth-child(2):hover
+{
+    background-color: rgb(251, 217, 252);
+}
+.feature .fe-box1:nth-child(3):hover
+{
+    background-color: rgb(226, 252, 217);
+}
+.feature .fe-box1:nth-child(4):hover
+{
+    background-color: rgb(217, 235, 252);
+}
+.feature .fe-box1:nth-child(5):hover
+{
+    background-color: rgb(238, 217, 252);
+}
+.feature .fe-box1:nth-child(6):hover
+{
+    background-color: rgb(252, 246, 217);
+}
+.feature .fe-box1 img
+{
+    width: 100px;
+    height: 80px;
+    margin-bottom: 10px;
+}
+.feature .fe-box1 h3
+{
+    font-size: 13px;
+}
+
+
+
+
+
+
+/*................... Contact section................... */
+
+.contact-header
+{
+    background-image: url(img/bn2.jpg);
+}
+.contact-details
+{
+    padding: 40px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.details
+{
+    width: 40%;
+}
+.details span
+{
+    font-size: 15px;
+}
+.details h2
+{
+    padding: 20px 0;
+    color: black;
+    font-size: 26px;
+    line-height: 35px;
+}
+.details h3
+{
+    padding-bottom: 20px;
+    font-size: 16px;
+}
+.list-loco li
+{
+    padding: 10px 0;
+    list-style-type: none;
+    display: flex;
+}
+.list-loco li i
+{
+    padding-right: 20px;
+    font-size: 16px;
+}
+.list-loco li i:hover
+{
+    color: red;
+}
+.list-loco li p
+{
+    margin: 0;
+    font-size: 16px;
+}
+.contact-details .map
+{
+    width: 55%;
+    height: 400px;
+}
+.contact-details .map iframe
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.form-details
+{
+    padding: 80px;
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #e1e1e1;
+}
+.form-details form
+{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: self-start;
+}
+.form-details form span
+{
+   font-size: 15px;
+}
+.form-details form h2
+{
+    padding: 20px 0;
+    color: black;
+    font-size: 26px;
+    line-height: 35px;
+}
+.form-details form input, textarea
+{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px 15px;
+    outline: none;
+    border: 1px solid #e1e1e1;
+}
+.form-details form button
+{
+    color: white;
+    background-color: red;
+}
+.form-details .pepole div
+{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: self-start;
+}
+.form-details .pepole div img
+{
+    width: 65px;
+    height: 65px;
+    margin-right: 15px;
+    object-fit: cover;
+}
+.form-details .pepole div p
+{
+    margin: 0;
+    font-size: 15px;
+    line-height: 25px;
+    color: #686868;
+}
+.form-details .pepole div span
+{
+   display: block;
+   font-size: 16px;
+   font-weight: 600;
+   color: black;
+}
+
+/*................... Cart Section................... */
+.cart-header
+{
+    background-image: url(img/bn5.jpg);
+}
+.cart
+{
+    padding: 40px 80px;
+    overflow-x: auto;
+}
+.cart table
+{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+.cart table img
+{
+    width: 70px;
+}
+.cart table td:nth-child(1)
+{
+    width: 100px;
+    text-align: center;
+}
+.cart table td:nth-child(2)
+{
+    width: 150px;
+    text-align: center;
+}
+.cart table td:nth-child(3)
+{
+    width: 250px;
+    text-align: center;
+}
+.cart table td:nth-child(4),
+.cart table td:nth-child(5),
+.cart table td:nth-child(6)
+{
+    width: 150px;
+    text-align: center;
+}
+.cart table td:nth-child(5) input
+{
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+.cart table tbody a
+{
+    color: black;
+}
+.cart table tbody a:hover
+{
+    color: red;
+}
+.cart table thead
+{
+    border: 1px solid #e1e1e1;
+    border-left: none;
+    border-right: none;
+}
+.cart table thead td
+{
+   padding: 18px 0;
+   font-size: 13px;
+   font-weight: 700;
+   text-transform: uppercase;
+}
+.cart table tbody tr td
+{
+   padding-top: 15px;
+}
+.cart table tbody td
+{
+   font-size: 14px;
+}
+
+.cart-add
+{
+    padding: 40px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.cart-add .coupon
+{
+    width: 50%;
+    margin-bottom: 30px;
+}
+.cart-add .coupon h3
+{
+    padding-bottom: 15px;
+}
+.cart-add .coupon input
+{
+    width: 60%;
+    margin-right: 10px;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid #bdbdbd;
+}
+.cart-add .coupon button
+{
+    padding: 12px 20px;
+    color: white;
+    background-color: red;
+}
+.cart-add .total
+{
+    width: 50%;
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 1px solid #e1e1e1;
+}
+.cart-add .total table
+{
+    width: 100%;
+    margin-bottom: 20px;
+    border-collapse: collapse;
+}
+.cart-add .total table td
+{
+    width: 50%;
+    padding: 10px;
+    font-size: 13px;
+    border: 1px solid #b5b4b4;
+}
+.cart-add .total h3
+{
+    padding-bottom: 15px;
+}
+.cart-add .total button
+{
+    padding: 12px 20px;
+    background-color: red;
+    color: white;
+}
+
+
+
+
+
+
+/*................... Media Query For Tablet................... */
+
+@media (max-width:799px) 
+{
+    .nav-bar 
+    {
+        width: 300px;
+        height: 100Vh;
+        padding: 80px 0 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:flex-start;
+        position: fixed;
+        top: 0;
+        right: -300px;
+        background-color: white;
+        box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+        transition: 0.3s;
+    }
+    .active
+    {
+        right: 0;
+    }
+    .nav-bar li
+    {
+        margin-bottom: 25px;
+    }
+    .mobile
+    {
+       display: flex;
+       align-items: center;
+    }
+    .mobile i
+    {
+        padding-left: 20px;
+        color: black;
+        font-size: 24px;
+    }
+    .close
+    {
+        visibility: visible;
+        font-size: 24px;
+    }
+    .lg-beg
+    {
+        display: none;
+    }
+
+    .hero 
+    {
+       padding: 0;
+       flex-direction: column;
+    }
+    .hero .hero-image img 
+    {
+        width: 750px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .feature
+    {
+        padding: 40px 40px;
+        justify-content: center;
+    }
+    .feature .fe-box
+    {
+        margin: 15px 15px;
+    }
+
+    .product1 
+    {
+        padding: 40px 40px;
+    }
+    .product1 .pro-container 
+    {
+        justify-content: center;
+    }
+    .product1 .pro 
+    {
+        margin: 15px;
+    }
+
+    .banner 
+    {
+        height: 20vh;
+    }
+
+    .smBanner 
+    {
+        padding: 40px 40px;
+    }
+    .smBanner .bannerBox 
+    {
+        min-width: 100%;
+        height: 30vh;
+    }
+
+    .banner3 
+    {
+        padding: 0 40px;
+    }
+    .banner3 .bannerBox 
+    {
+        width: 28%;
+    }
+
+    .newsletter 
+    {
+        padding: 40px 40px;
+        justify-content: center;
+    }
+    .newsletter .form 
+    {
+        width: 60%;
+    }
+    .newsletter .newsText
+    {
+        padding-bottom: 5px;
+    }
+
+    footer 
+    {
+        padding: 40px 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    /* Contact Page */
+
+    .contact-details
+    {
+        padding: 40px;
+    }
+    .form-details
+    {
+        padding: 40px;
+    }
+    .form-details form 
+    {
+        width: 50%;
+    }
+
+}
+
+/*................... Media Query For Mobile................... */
+
+@media (max-width: 447px) 
+{
+    .header 
+    {
+        padding: 10px 30px;
+    }
+
+    .hero 
+    {
+        padding: 40px 0 20px 0;
+        flex-direction: column;
+    }
+    .hero .hero-text 
+    {
+        height: 100%;
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .hero .hero-image img 
+    {
+        width: 370px;
+        height: 350px;
+        object-fit: cover;
+    }
+    .hero h4
+    {
+        font-size: 20px;
+    }
+    .hero h2
+    {
+        font-size: 30px;
+    }
+    .hero h1
+    {
+        font-size: 30px;
+        color: rgb(255, 119, 0);
+    }
+
+    .feature 
+    {
+        justify-content: space-between;
+        padding: 20px;
+    }
+    .feature .fe-box 
+    {
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+
+    .product1 .pro 
+    {
+        width: 100%;
+    }
+
+    .banner 
+    {
+        height: 40vh;
+    }
+
+    .smBanner 
+    {
+        padding: 10px;
+    }
+    .smBanner .bannerBox 
+    {
+        height: 40vh;
+    }
+    .smBanner .bannerBox:nth-child(2 of .bannerBox) 
+    {
+        margin-top: 10px;
+    }
+
+    .banner3 
+    {
+        padding: 0 10px;
+    }
+    .banner3 .bannerBox 
+    {
+        margin-bottom: 0px;
+        padding: 20px;
+        width: 100%;
+    }
+
+    .newsletter 
+    {
+        padding: 40px 20px;
+    }
+    .newsletter .form 
+    {
+        width: 100%;
+    }
+
+    footer .copyright
+    {
+        font-size: 13px;
+    }
+
+    /* single product page details */
+
+    .prodetails 
+    {
+        padding: 20px 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .prodetails .single-proImage 
+    {
+        width: 100%;
+        margin-right: 0px;
+    }
+    .prodetails .single-pro-details 
+    {
+        width: 100%;
+    }
+
+    /* About Page */
+
+    .about-head
+     {
+        padding: 40px 20px;
+        flex-direction: column;
+    }
+    .about-head img
+    {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .about-box h2
+    {
+        margin-bottom: 30px;
+    }
+    .about-app
+    {
+        padding: 40px 20px;
+    }
+    .about-app h1
+    {
+        font-size: 35px;
+    }
+    .about-box
+    {
+        padding-left: 0px;
+    }
+    .about-app .video
+    {
+        width: 100%;
+    }
+    .feature 
+    {
+        justify-content: center;
+        padding: 20px;
+    }
+
+
+    /* Contact section */
+
+    .contact-details
+    {
+        padding: 40px;
+        flex-direction: column;
+    }
+    .details
+    {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .contact-details .map
+    {
+        width: 100%;
+    }
+    .form-details
+    {
+        padding: 20px;
+        flex-direction: column;
+    }
+    .form-details form 
+    {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    /* Cart Section */
+
+    .cart-add
+    {
+        padding: 20px;
+        flex-direction: column;
+    }
+    .cart-add .coupon
+    {
+        width: 100%;
+    }
+    .cart-add .total
+    {
+        width: 100%;
+        padding: 20px;
+    }
+}
